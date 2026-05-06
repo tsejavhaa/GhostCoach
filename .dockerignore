@@ -1,0 +1,11 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+.git
+interview_assistant_settings.json
+interview_session_log.md
+interview_history.jsonl
+
+# macOS-only — runs natively on Computer B, not needed in the Linux container
+screenshot_http_server.py

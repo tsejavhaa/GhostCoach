@@ -1,0 +1,31 @@
+# ── Core UI ────────────────────────────────────────────────────────────────────
+customtkinter>=5.2.0          # Dark-mode CustomTkinter widgets
+Pillow>=10.0.0                # Image handling (screen capture, canvas rendering)
+
+# ── OCR ────────────────────────────────────────────────────────────────────────
+pytesseract>=0.3.10           # Tesseract OCR Python wrapper
+# Also install the Tesseract binary: brew install tesseract
+
+# ── Screen capture (macOS only) ────────────────────────────────────────────────
+pyobjc-framework-Quartz # Quartz CGWindowList / CGDisplay APIs
+pyobjc-framework-ApplicationServices # NSWorkspace for running-app enumeration
+
+# ── Webcam ─────────────────────────────────────────────────────────────────────
+opencv-python>=4.9.0          # cv2 webcam capture
+
+# ── LLM — Local (Ollama) ───────────────────────────────────────────────────────
+ollama>=0.2.0                 # Ollama Python client
+# Also run: brew install ollama && ollama serve
+
+# ── LLM — Cloud (OpenAI) ───────────────────────────────────────────────────────
+openai>=1.30.0                # OpenAI API client (optional; only needed for OpenAI mode)
+
+# ── Screenshot server (Computer B only) ────────────────────────────────────────
+# The screenshot_http_server.py script needs only Pillow (already listed above).
+# Install it separately on Computer B with: pip install Pillow
+
+# ── Future / optional: audio speech-to-text ────────────────────────────────────
+# Uncomment these when audio_stt.py is wired into the main app:
+# faster-whisper>=1.0.0       # Whisper transcription (Apple Silicon int8)
+# sounddevice>=0.4.6          # Microphone capture
+# numpy>=1.26.0               # Audio buffer processing
