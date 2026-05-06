@@ -53,3 +53,5 @@ pnpm-debug.log*
 *.swp
 *~
 .DS_Store
+interview_assistant_settings.json
+
